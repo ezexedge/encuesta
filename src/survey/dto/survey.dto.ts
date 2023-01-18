@@ -35,4 +35,3 @@ export class SurveyDTO {
   @IsString()
   question: string;
 }
-//prueba
