@@ -15,4 +15,8 @@ export class SurveyService {
     const newSurvey = await this.model.create(surveyDTO);
     return await newSurvey.save();
   }
+  async getAll(): Promise<ISurvey[]> {
+    const survey = await this.model.find();
+    return await survey;
+  }
 }
