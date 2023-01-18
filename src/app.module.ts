@@ -8,7 +8,7 @@ import { SurveyModule } from './survey/survey.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.env.development'],
+      envFilePath: ['.env'],
       isGlobal: true,
     }),
     MongooseModule.forRoot(process.env.URI_MONGODB),
